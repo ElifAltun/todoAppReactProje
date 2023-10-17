@@ -1,38 +1,92 @@
+body
+{
+  background-color: #a8d9dd;
+  color: rgb(0, 0, 0);
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gorevBg
+{
+   background-color:#ededed;
+   border-radius: 6px;
+   margin-bottom: 20px;
+   padding: 10px 140px 10px 15px;
+   text-align: left;
+   font-size: 22px;
+   position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gorevBg .gorevText
+{
+   flex: 1;
+  /* esnek olsun diye flex' e 1 değeri verdik. */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gorevBg .done .gorevText
+{
+  text-decoration: line-through;
+  opacity: 0.3;
+  /* Görev tamamlandıysa opaklığı 0.3 olsun. */
+}
+.gorevBg div{
+  /* görevBg içindeki divide esnek hale getirdim */
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+.gorevNumarasi 
+{
+  color: rgb(20, 20, 20);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 8px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.iconlar
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.check
+{
+  color: rgb(56, 113, 56);
+}
+.pen
+{
+  color:rgb(15, 117, 172);
+}
+.trashcan
+{
+  color: red;
+}
+.gorevBg .iconlar span
+{
+  margin: 0 3px 0 3px;
+  cursor: pointer;
+}
+.gorevBg .iconlar span:hover
+{
+  color: black;
+}
+.mr-20
+{
+  margin-right: 20px;
+}
+.ekle
+{
+ background-color: #1d3657;
+ color: white;
+}
+.iptal
+{
+  background-color: #8c2320;
+  color:white ;
 }
